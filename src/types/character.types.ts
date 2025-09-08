@@ -1,4 +1,10 @@
-export type AbilityName = 'Mobility' | 'Technique' | 'Survivability' | 'Power' | 'Energy';
+export type AbilityName =
+  | "Mobility"
+  | "Technique"
+  | "Survivability"
+  | "Power"
+  | "Energy";
+
 export interface CharacterAbility {
   abilityName: AbilityName;
   abilityScore: number;
@@ -16,4 +22,12 @@ export interface Character {
   universe: string;
   abilities: CharacterAbility[];
   tags: CharacterTag[];
+}
+
+export interface TeamAverages {
+  Power: number;
+  Mobility: number;
+  Technique: number;
+  Survivability: number;
+  Energy: number;
 }
