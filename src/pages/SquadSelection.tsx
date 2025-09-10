@@ -4,7 +4,6 @@ import { FilterTags } from "@/components/FilterBar/FilterTags";
 import { Header } from "@/components/Layout/Header";
 import { SearchBar } from "@/components/SearchBar/SearchBar";
 import { SquadDisplay } from "@/components/Squad/SquadDisplay";
-import { SquadStats } from "@/components/Squad/SquadStats";
 import { useCharacterFilters, useSquadManagement } from "@/hooks";
 import type { Character } from "@/types";
 import jsonData from "../data/characters.json";

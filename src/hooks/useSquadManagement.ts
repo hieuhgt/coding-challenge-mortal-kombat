@@ -36,7 +36,7 @@ export const useSquadManagement = () => {
     const isCharacterSelected = selectedCharacters.some(
       (char) => char.id === character.id,
     );
-    if (isCharacterSelected) return;
+    if (isCharacterSelected) { return removeCharacter(character.id); }
     if (selectedCharacters.length >= MAX_SQUAD_SIZE) return;
     setSelectedCharacters((prev) => [...prev, character]);
   };
